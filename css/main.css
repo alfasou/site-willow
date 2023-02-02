@@ -79,15 +79,19 @@ a {
 }
 
 .menu {
+  color: #fff;
+  position: absolute;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 8px 16px;
+  top: 50%;
+  left: 0;
 }
 
 .title-head {
-  color: #000;
+  color: #fff;
   float: left;
 }
 
