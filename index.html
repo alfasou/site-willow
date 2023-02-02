@@ -9,8 +9,10 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css" />
 
     <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Estonia&family=Love+Light&family=Square+Peg&display=swap" rel="stylesheet" />
@@ -32,12 +34,20 @@
     <header>
       <img src="img/willowbg.png" id="willowhead" alt="orfanato onde willow cresceu em vermelho" name="willow header" />
 
-      <nav class="menu">
-        <h1 class="title-head">Willow</h1>
+      <nav class="menu" id="topnav">
+        <div class="title-head">
+          <h1>Willow</h1>
+        </div>
         <!-- Right-sided navbar links. Hide them on small screens -->
-        <a href="#bernie" class="menu-item">Peculiaridades</a>
-        <a href="#story" class="menu-item">História</a>
-        <a href="#about" class="menu-item">Sobre</a>
+        <div id="links">
+          <a href="#bernie" class="menu-item">Peculiaridades</a>
+          <a href="#story" class="menu-item">História</a>
+          <a href="#about" class="menu-item">Sobre</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <span class="icon">
+          <i class="fa-solid fa-bars"></i>
+        </span>
       </nav>
     </header>
 
@@ -82,8 +92,6 @@
       </article>
     </section>
 
-    <a href="#willowhead"><p class="button">Voltar ao Topo</p></a>
-
     <!-- Story Section -->
     <section id="second">
       <div class="willowimg">
@@ -121,8 +129,6 @@
         ></iframe>
       </div>
     </section>
-
-    <a href="#willowhead"><p class="button">Voltar ao Topo</p></a>
 
     <!-- Curiosities Section -->
     <section id="third">
@@ -183,7 +189,6 @@
         </p>
       </article>
     </section>
-    <a href="#willowhead"><p class="button">Voltar ao Topo</p></a>
     <!-- End page content -->
 
     <!-- Footer -->
