@@ -2,7 +2,7 @@
 
 @media (max-width: 768px) {
   .menu {
-    top: 50px;
+    top: 45px;
     left: 0;
   }
 
@@ -30,10 +30,12 @@
     justify-content: space-between;
     text-align: center;
     width: 100%;
-    height: 100px;
+    height: 0px;
+    color: #000;
+    background: #fff;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 350px;
+    top: 160px;
     left: 0px;
   }
 
@@ -42,13 +44,17 @@
     width: 100%;
   }
 
-  .menu .icon i:not(:checked) ~ .menu #links {
+  .menu #icon-check:not(:checked) ~ #links {
     height: 0px;
   }
 
-  .menu .icon i:checked ~ * .menu #links {
-    height: calc(300px - 50px);
-    overflow-y: auto;
+  .menu #icon-check:checked ~ #links {
+    height: calc(150px - 20px);
+    overflow-y: hidden;
+  }
+
+  #first {
+    margin-top: 100px;
   }
 
   #third article {
