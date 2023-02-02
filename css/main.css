@@ -1,19 +1,4 @@
 /* CSS start */
-@font-face {
-  font-family: 'October Crow';
-  src: url('fonts/october_crow.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Belisa Plumilla Manual';
-  src: url('fonts/belisa_plumilla.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'HammerheadRegular';
-  src: url('fonts/hammerheadregular.ttf') format('truetype');
-}
-
 html,
 body {
   font-family: Verdana, sans-serif;
@@ -34,23 +19,29 @@ header {
 }
 
 h1 {
-  font-size: 65px;
-  font-family: 'Dont Title', Arial, sans-serif;
+  font-size: 7em;
+  font-family: 'October Crow', 'Love Light', 'Square Peg', Arial, sans-serif;
   font-weight: 400;
   margin: 10px 0;
-  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 36px;
-  font-family: 'HammerheadRegular', Arial, sans-serif;
+  font-size: 5em;
+  font-family: 'Hammerhead Regular', 'Square Peg', Arial, sans-serif;
   font-weight: 400;
   margin: 10px 0;
 }
 
 h4 {
-  font-size: 28px;
-  font-family: 'Belisa plumilla manual', Arial, sans-serif;
+  font-size: 3em;
+  font-family: 'Belisa Plumilla Manual', 'Estonia', 'Square Peg', Arial, sans-serif;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.menu a {
+  font-size: 3em;
+  font-family: 'Belisa Plumilla Manual', 'Estonia', 'Square Peg', Arial, sans-serif;
   font-weight: 400;
   margin: 10px 0;
 }
