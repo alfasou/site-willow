@@ -1,0 +1,69 @@
+/* Small screens mods */
+
+@media (max-width: 768px) {
+  .menu {
+    top: 45px;
+    left: 0;
+  }
+
+  .menu .icon {
+    display: block;
+    font-size: 3em;
+    right: 0px;
+    top: 0px;
+  }
+
+  .menu .icon i {
+    padding: 10px;
+  }
+
+  .menu .icon i:hover,
+  .menu .icon i:checked ~ .menu .icon i {
+    background-color: rgba(100, 100, 100, 0.3);
+    cursor: pointer;
+  }
+
+  .menu #links {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 0px;
+    color: #000;
+    background: #fff;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 160px;
+    left: 0px;
+  }
+
+  .menu #links a {
+    display: block;
+    width: 100%;
+  }
+
+  .menu #icon-check:not(:checked) ~ #links {
+    height: 0px;
+  }
+
+  .menu #icon-check:checked ~ #links {
+    height: calc(150px - 20px);
+    overflow-y: hidden;
+  }
+
+  #first {
+    margin-top: 100px;
+  }
+
+  #third article {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .video {
+    padding-bottom: 40%;
+  }
+}
